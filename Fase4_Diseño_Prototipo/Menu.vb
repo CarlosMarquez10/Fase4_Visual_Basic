@@ -212,6 +212,7 @@ Public Class Menu
         lblTemadescription.Visible = True
         lblTemadescription.Text = "Tema 3 : Condicionales para Programación"
         AxAcroPDF1.Visible = True
+        AxAcroPDF1.src = dato
         PnlPdf.Location = New Point(186, 81)
         PnlPdf.Visible = True
         PnlVidos.Visible = False
