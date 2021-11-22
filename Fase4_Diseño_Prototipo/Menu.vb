@@ -112,7 +112,7 @@ Public Class Menu
         PnlVidos.Controls.Add(lBrowser)
         lBrowser.Location = New Point(150, 85)
         lBrowser.Size = New Size(500, 300)
-        lBrowser.Navigate("https://youtu.be/YpZbGBjC5yA")
+        lBrowser.Navigate("https://youtu.be/PGIFXHmw_js")
 
 
     End Sub
