@@ -120,7 +120,7 @@ Public Class Menu
         PnlVidos.Controls.Add(lBrowser)
         lBrowser.Location = New Point(150, 85)
         lBrowser.Size = New Size(500, 300)
-        lBrowser.Navigate("https://youtu.be/oDtjZv19Bgw")
+        lBrowser.Navigate("https://youtu.be/JXDUKotmsWQ")
 
     End Sub
 
@@ -178,6 +178,7 @@ Public Class Menu
         dato = rutaCompleta.ToString()
 
         AxAcroPDF1.Visible = True
+        AxAcroPDF1.src = dato
         PnlPdf.Location = New Point(186, 81)
         PnlPdf.Visible = True
         PnlVidos.Visible = False
