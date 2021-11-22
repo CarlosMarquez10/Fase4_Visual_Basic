@@ -56,3 +56,32 @@ C:\Users\ANGY JEREZ\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\
 C:\Users\ANGY JEREZ\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.exe
 C:\Users\ANGY JEREZ\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.xml
 C:\Users\ANGY JEREZ\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.pdb
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\BdAlumno.mdf
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\BdAlumno_log.ldf
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\BdAlumnoDataSet.Designer.vb
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\BdAlumnoDataSet.vb
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\BdAlumnoDataSet.xsc
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\BdAlumnoDataSet.xsd
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\BdAlumnoDataSet.xss
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\Fase4_Diseño_Prototipo.exe.config
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\Fase4_Diseño_Prototipo.exe
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\Fase4_Diseño_Prototipo.pdb
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\Fase4_Diseño_Prototipo.xml
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\Interop.WMPLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.vbproj.AssemblyReference.cache
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Interop.WMPLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.vbproj.ResolveComReference.cache
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.Form1.resources
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.Menu.resources
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.Resources.resources
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.vbproj.GenerateResource.cache
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.vbproj.CoreCompileInputs.cache
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.exe
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.xml
+C:\Users\Puchi\Source\Repos\Fase4_Visual_Basic\Fase4_Diseño_Prototipo\obj\Debug\Fase4_Diseño_Prototipo.pdb

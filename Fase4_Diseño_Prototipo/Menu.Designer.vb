@@ -91,6 +91,7 @@ Partial Class Menu
         Me.TmsAud2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TmsAud3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AlumnoTableAdapter = New Fase4_Diseño_Prototipo.BdAlumnoDataSetTableAdapters.AlumnoTableAdapter()
+        Me.lblTemadescription = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PnlContenido.SuspendLayout()
@@ -126,9 +127,8 @@ Partial Class Menu
         Me.Panel1.Controls.Add(Me.lblTitulo)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1924, 94)
+        Me.Panel1.Size = New System.Drawing.Size(1283, 61)
         Me.Panel1.TabIndex = 0
         '
         'lblFecha
@@ -136,10 +136,9 @@ Partial Class Menu
         Me.lblFecha.AutoSize = True
         Me.lblFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFecha.ForeColor = System.Drawing.Color.White
-        Me.lblFecha.Location = New System.Drawing.Point(1041, 54)
-        Me.lblFecha.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblFecha.Location = New System.Drawing.Point(694, 35)
         Me.lblFecha.Name = "lblFecha"
-        Me.lblFecha.Size = New System.Drawing.Size(18, 25)
+        Me.lblFecha.Size = New System.Drawing.Size(12, 16)
         Me.lblFecha.TabIndex = 1
         Me.lblFecha.Text = "."
         '
@@ -148,22 +147,21 @@ Partial Class Menu
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.White
-        Me.lblTitulo.Location = New System.Drawing.Point(398, 14)
-        Me.lblTitulo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTitulo.Location = New System.Drawing.Point(264, 0)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(392, 61)
+        Me.lblTitulo.Size = New System.Drawing.Size(261, 39)
         Me.lblTitulo.TabIndex = 0
         Me.lblTitulo.Text = "Menu - Fase 4 "
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel2.Controls.Add(Me.lblTemadescription)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 956)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel2.Location = New System.Drawing.Point(0, 1000)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1924, 94)
+        Me.Panel2.Size = New System.Drawing.Size(1283, 61)
         Me.Panel2.TabIndex = 1
         '
         'Label7
@@ -171,10 +169,9 @@ Partial Class Menu
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(1118, 42)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(745, 27)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(257, 37)
+        Me.Label7.Size = New System.Drawing.Size(178, 25)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Carlos Marquez"
         '
@@ -196,10 +193,9 @@ Partial Class Menu
         Me.PnlContenido.Controls.Add(Me.btnConsultar)
         Me.PnlContenido.Controls.Add(Me.btnRegistar)
         Me.PnlContenido.Controls.Add(Me.PictureBox1)
-        Me.PnlContenido.Location = New System.Drawing.Point(279, 103)
-        Me.PnlContenido.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PnlContenido.Location = New System.Drawing.Point(186, 67)
         Me.PnlContenido.Name = "PnlContenido"
-        Me.PnlContenido.Size = New System.Drawing.Size(1113, 652)
+        Me.PnlContenido.Size = New System.Drawing.Size(742, 424)
         Me.PnlContenido.TabIndex = 2
         '
         'Label6
@@ -208,10 +204,9 @@ Partial Class Menu
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(161, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label6.Location = New System.Drawing.Point(94, 377)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(63, 245)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 29)
+        Me.Label6.Size = New System.Drawing.Size(63, 20)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Correo"
         '
@@ -221,10 +216,9 @@ Partial Class Menu
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label5.Location = New System.Drawing.Point(585, 169)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(390, 110)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(110, 29)
+        Me.Label5.Size = New System.Drawing.Size(73, 20)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Apellido"
         '
@@ -234,10 +228,9 @@ Partial Class Menu
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label4.Location = New System.Drawing.Point(585, 272)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(390, 177)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(101, 29)
+        Me.Label4.Size = New System.Drawing.Size(69, 20)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Carrera"
         '
@@ -247,10 +240,9 @@ Partial Class Menu
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label3.Location = New System.Drawing.Point(94, 272)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(63, 177)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(168, 29)
+        Me.Label3.Size = New System.Drawing.Size(117, 20)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Iendtificación"
         '
@@ -260,10 +252,9 @@ Partial Class Menu
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label2.Location = New System.Drawing.Point(94, 169)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(63, 110)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 29)
+        Me.Label2.Size = New System.Drawing.Size(71, 20)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Nombre"
         '
@@ -272,10 +263,9 @@ Partial Class Menu
         Me.TxtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtCorreo.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AlumnoBindingSource, "Correo", True))
         Me.TxtCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCorreo.Location = New System.Drawing.Point(94, 423)
-        Me.TxtCorreo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtCorreo.Location = New System.Drawing.Point(63, 275)
         Me.TxtCorreo.Name = "TxtCorreo"
-        Me.TxtCorreo.Size = New System.Drawing.Size(926, 28)
+        Me.TxtCorreo.Size = New System.Drawing.Size(617, 19)
         Me.TxtCorreo.TabIndex = 9
         '
         'AlumnoBindingSource
@@ -293,10 +283,9 @@ Partial Class Menu
         Me.TxtCarrera.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtCarrera.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AlumnoBindingSource, "Carrera", True))
         Me.TxtCarrera.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCarrera.Location = New System.Drawing.Point(591, 322)
-        Me.TxtCarrera.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtCarrera.Location = New System.Drawing.Point(394, 209)
         Me.TxtCarrera.Name = "TxtCarrera"
-        Me.TxtCarrera.Size = New System.Drawing.Size(429, 28)
+        Me.TxtCarrera.Size = New System.Drawing.Size(286, 19)
         Me.TxtCarrera.TabIndex = 8
         '
         'TxtApellido
@@ -304,10 +293,9 @@ Partial Class Menu
         Me.TxtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtApellido.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AlumnoBindingSource, "Apellido", True))
         Me.TxtApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtApellido.Location = New System.Drawing.Point(591, 212)
-        Me.TxtApellido.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtApellido.Location = New System.Drawing.Point(394, 138)
         Me.TxtApellido.Name = "TxtApellido"
-        Me.TxtApellido.Size = New System.Drawing.Size(429, 28)
+        Me.TxtApellido.Size = New System.Drawing.Size(286, 19)
         Me.TxtApellido.TabIndex = 7
         '
         'TxtIdentificacion
@@ -315,10 +303,9 @@ Partial Class Menu
         Me.TxtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtIdentificacion.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AlumnoBindingSource, "IdAlumno", True))
         Me.TxtIdentificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtIdentificacion.Location = New System.Drawing.Point(94, 322)
-        Me.TxtIdentificacion.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtIdentificacion.Location = New System.Drawing.Point(63, 209)
         Me.TxtIdentificacion.Name = "TxtIdentificacion"
-        Me.TxtIdentificacion.Size = New System.Drawing.Size(429, 28)
+        Me.TxtIdentificacion.Size = New System.Drawing.Size(286, 19)
         Me.TxtIdentificacion.TabIndex = 6
         '
         'TxtNombre
@@ -326,19 +313,17 @@ Partial Class Menu
         Me.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtNombre.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.AlumnoBindingSource, "Nombre", True))
         Me.TxtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNombre.Location = New System.Drawing.Point(94, 212)
-        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TxtNombre.Location = New System.Drawing.Point(63, 138)
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(429, 28)
+        Me.TxtNombre.Size = New System.Drawing.Size(286, 19)
         Me.TxtNombre.TabIndex = 5
         '
         'btnEliminar
         '
         Me.btnEliminar.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.Borrar
-        Me.btnEliminar.Location = New System.Drawing.Point(766, 525)
-        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnEliminar.Location = New System.Drawing.Point(511, 341)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(183, 51)
+        Me.btnEliminar.Size = New System.Drawing.Size(122, 33)
         Me.btnEliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnEliminar.TabIndex = 4
         Me.btnEliminar.TabStop = False
@@ -346,10 +331,9 @@ Partial Class Menu
         'btnActualizar
         '
         Me.btnActualizar.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.Actualizar
-        Me.btnActualizar.Location = New System.Drawing.Point(574, 525)
-        Me.btnActualizar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnActualizar.Location = New System.Drawing.Point(383, 341)
         Me.btnActualizar.Name = "btnActualizar"
-        Me.btnActualizar.Size = New System.Drawing.Size(183, 51)
+        Me.btnActualizar.Size = New System.Drawing.Size(122, 33)
         Me.btnActualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnActualizar.TabIndex = 3
         Me.btnActualizar.TabStop = False
@@ -357,10 +341,9 @@ Partial Class Menu
         'btnConsultar
         '
         Me.btnConsultar.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.consultar
-        Me.btnConsultar.Location = New System.Drawing.Point(382, 525)
-        Me.btnConsultar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnConsultar.Location = New System.Drawing.Point(255, 341)
         Me.btnConsultar.Name = "btnConsultar"
-        Me.btnConsultar.Size = New System.Drawing.Size(183, 51)
+        Me.btnConsultar.Size = New System.Drawing.Size(122, 33)
         Me.btnConsultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnConsultar.TabIndex = 2
         Me.btnConsultar.TabStop = False
@@ -368,10 +351,9 @@ Partial Class Menu
         'btnRegistar
         '
         Me.btnRegistar.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.Registrar
-        Me.btnRegistar.Location = New System.Drawing.Point(190, 525)
-        Me.btnRegistar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRegistar.Location = New System.Drawing.Point(127, 341)
         Me.btnRegistar.Name = "btnRegistar"
-        Me.btnRegistar.Size = New System.Drawing.Size(183, 51)
+        Me.btnRegistar.Size = New System.Drawing.Size(122, 33)
         Me.btnRegistar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnRegistar.TabIndex = 1
         Me.btnRegistar.TabStop = False
@@ -379,10 +361,9 @@ Partial Class Menu
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.formularioRegistro
-        Me.PictureBox1.Location = New System.Drawing.Point(4, 5)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1101, 643)
+        Me.PictureBox1.Size = New System.Drawing.Size(734, 418)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -397,19 +378,18 @@ Partial Class Menu
         Me.pnlMenu.Controls.Add(Me.btnTemas)
         Me.pnlMenu.Controls.Add(Me.lbltituloMenu)
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
-        Me.pnlMenu.Location = New System.Drawing.Point(0, 94)
-        Me.pnlMenu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.pnlMenu.Location = New System.Drawing.Point(0, 61)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(270, 862)
+        Me.pnlMenu.Size = New System.Drawing.Size(180, 939)
         Me.pnlMenu.TabIndex = 0
         '
         'btnMenu
         '
         Me.btnMenu.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.barraMenu1
-        Me.btnMenu.Location = New System.Drawing.Point(4, 5)
-        Me.btnMenu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 154)
+        Me.btnMenu.Location = New System.Drawing.Point(3, 3)
+        Me.btnMenu.Margin = New System.Windows.Forms.Padding(3, 3, 3, 100)
         Me.btnMenu.Name = "btnMenu"
-        Me.btnMenu.Size = New System.Drawing.Size(69, 57)
+        Me.btnMenu.Size = New System.Drawing.Size(46, 37)
         Me.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnMenu.TabIndex = 5
         Me.btnMenu.TabStop = False
@@ -418,10 +398,9 @@ Partial Class Menu
         '
         Me.BtnRegistro.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BtnRegistro.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.btnRegistrar3
-        Me.BtnRegistro.Location = New System.Drawing.Point(9, 273)
-        Me.BtnRegistro.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BtnRegistro.Location = New System.Drawing.Point(6, 366)
         Me.BtnRegistro.Name = "BtnRegistro"
-        Me.BtnRegistro.Size = New System.Drawing.Size(250, 49)
+        Me.BtnRegistro.Size = New System.Drawing.Size(167, 32)
         Me.BtnRegistro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.BtnRegistro.TabIndex = 1
         Me.BtnRegistro.TabStop = False
@@ -430,10 +409,9 @@ Partial Class Menu
         '
         Me.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnSalir.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.btnSalir1
-        Me.btnSalir.Location = New System.Drawing.Point(9, 599)
-        Me.btnSalir.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnSalir.Location = New System.Drawing.Point(6, 578)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(250, 49)
+        Me.btnSalir.Size = New System.Drawing.Size(167, 32)
         Me.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnSalir.TabIndex = 4
         Me.btnSalir.TabStop = False
@@ -442,10 +420,9 @@ Partial Class Menu
         '
         Me.btnConsulta.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnConsulta.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.btnBD1
-        Me.btnConsulta.Location = New System.Drawing.Point(9, 426)
-        Me.btnConsulta.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnConsulta.Location = New System.Drawing.Point(6, 466)
         Me.btnConsulta.Name = "btnConsulta"
-        Me.btnConsulta.Size = New System.Drawing.Size(250, 49)
+        Me.btnConsulta.Size = New System.Drawing.Size(167, 32)
         Me.btnConsulta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnConsulta.TabIndex = 3
         Me.btnConsulta.TabStop = False
@@ -454,10 +431,9 @@ Partial Class Menu
         '
         Me.btnTemas.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnTemas.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.btnTema1
-        Me.btnTemas.Location = New System.Drawing.Point(4, 350)
-        Me.btnTemas.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnTemas.Location = New System.Drawing.Point(3, 416)
         Me.btnTemas.Name = "btnTemas"
-        Me.btnTemas.Size = New System.Drawing.Size(255, 49)
+        Me.btnTemas.Size = New System.Drawing.Size(170, 32)
         Me.btnTemas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnTemas.TabIndex = 2
         Me.btnTemas.TabStop = False
@@ -467,10 +443,9 @@ Partial Class Menu
         Me.lbltituloMenu.AutoSize = True
         Me.lbltituloMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbltituloMenu.ForeColor = System.Drawing.Color.White
-        Me.lbltituloMenu.Location = New System.Drawing.Point(72, 9)
-        Me.lbltituloMenu.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbltituloMenu.Location = New System.Drawing.Point(48, 6)
         Me.lbltituloMenu.Name = "lbltituloMenu"
-        Me.lbltituloMenu.Size = New System.Drawing.Size(28, 40)
+        Me.lbltituloMenu.Size = New System.Drawing.Size(20, 29)
         Me.lbltituloMenu.TabIndex = 6
         Me.lbltituloMenu.Text = "."
         '
@@ -480,10 +455,9 @@ Partial Class Menu
         Me.PnlConsulta.Controls.Add(Me.DataGridView1)
         Me.PnlConsulta.Controls.Add(Me.Label8)
         Me.PnlConsulta.Controls.Add(Me.PictureBox6)
-        Me.PnlConsulta.Location = New System.Drawing.Point(1510, 103)
-        Me.PnlConsulta.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PnlConsulta.Location = New System.Drawing.Point(1007, 67)
         Me.PnlConsulta.Name = "PnlConsulta"
-        Me.PnlConsulta.Size = New System.Drawing.Size(1113, 652)
+        Me.PnlConsulta.Size = New System.Drawing.Size(742, 424)
         Me.PnlConsulta.TabIndex = 15
         '
         'DataGridView1
@@ -492,11 +466,10 @@ Partial Class Menu
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdAlumnoDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.ApellidoDataGridViewTextBoxColumn, Me.CarreraDataGridViewTextBoxColumn, Me.CorreoDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.AlumnoBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(153, 212)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DataGridView1.Location = New System.Drawing.Point(102, 138)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(813, 314)
+        Me.DataGridView1.Size = New System.Drawing.Size(542, 204)
         Me.DataGridView1.TabIndex = 2
         '
         'IdAlumnoDataGridViewTextBoxColumn
@@ -545,20 +518,18 @@ Partial Class Menu
         Me.Label8.BackColor = System.Drawing.Color.White
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label8.Location = New System.Drawing.Point(308, 69)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(205, 45)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(500, 55)
+        Me.Label8.Size = New System.Drawing.Size(342, 37)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Consulta de Alumnos"
         '
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.Fase4_Diseño_Prototipo.My.Resources.Resources.PnelConsulta1
-        Me.PictureBox6.Location = New System.Drawing.Point(14, 20)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox6.Location = New System.Drawing.Point(9, 13)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(1095, 611)
+        Me.PictureBox6.Size = New System.Drawing.Size(730, 397)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 0
         Me.PictureBox6.TabStop = False
@@ -567,10 +538,9 @@ Partial Class Menu
         '
         Me.PnlVidos.BackColor = System.Drawing.Color.White
         Me.PnlVidos.Controls.Add(Me.Panel4)
-        Me.PnlVidos.Location = New System.Drawing.Point(1510, 808)
-        Me.PnlVidos.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PnlVidos.Location = New System.Drawing.Point(1007, 525)
         Me.PnlVidos.Name = "PnlVidos"
-        Me.PnlVidos.Size = New System.Drawing.Size(1113, 652)
+        Me.PnlVidos.Size = New System.Drawing.Size(742, 424)
         Me.PnlVidos.TabIndex = 16
         '
         'Panel4
@@ -578,9 +548,8 @@ Partial Class Menu
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1113, 15)
+        Me.Panel4.Size = New System.Drawing.Size(742, 10)
         Me.Panel4.TabIndex = 0
         '
         'OpenFileDialog1
@@ -591,11 +560,10 @@ Partial Class Menu
         '
         Me.AxAcroPDF1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AxAcroPDF1.Enabled = True
-        Me.AxAcroPDF1.Location = New System.Drawing.Point(0, 15)
-        Me.AxAcroPDF1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.AxAcroPDF1.Location = New System.Drawing.Point(0, 10)
         Me.AxAcroPDF1.Name = "AxAcroPDF1"
         Me.AxAcroPDF1.OcxState = CType(resources.GetObject("AxAcroPDF1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxAcroPDF1.Size = New System.Drawing.Size(1113, 637)
+        Me.AxAcroPDF1.Size = New System.Drawing.Size(742, 414)
         Me.AxAcroPDF1.TabIndex = 0
         '
         'PnlAudio
@@ -603,21 +571,19 @@ Partial Class Menu
         Me.PnlAudio.BackColor = System.Drawing.Color.White
         Me.PnlAudio.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.PnlAudio.Controls.Add(Me.Panel5)
-        Me.PnlAudio.Location = New System.Drawing.Point(2684, 808)
-        Me.PnlAudio.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PnlAudio.Location = New System.Drawing.Point(1789, 525)
         Me.PnlAudio.Name = "PnlAudio"
-        Me.PnlAudio.Size = New System.Drawing.Size(1113, 652)
+        Me.PnlAudio.Size = New System.Drawing.Size(742, 424)
         Me.PnlAudio.TabIndex = 17
         '
         'AxWindowsMediaPlayer1
         '
         Me.AxWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AxWindowsMediaPlayer1.Enabled = True
-        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(0, 15)
-        Me.AxWindowsMediaPlayer1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(0, 10)
         Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
         Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(1113, 637)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(742, 414)
         Me.AxWindowsMediaPlayer1.TabIndex = 1
         '
         'Panel5
@@ -625,9 +591,8 @@ Partial Class Menu
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1113, 15)
+        Me.Panel5.Size = New System.Drawing.Size(742, 10)
         Me.Panel5.TabIndex = 0
         '
         'PnlPdf
@@ -635,10 +600,9 @@ Partial Class Menu
         Me.PnlPdf.BackColor = System.Drawing.Color.White
         Me.PnlPdf.Controls.Add(Me.AxAcroPDF1)
         Me.PnlPdf.Controls.Add(Me.Panel7)
-        Me.PnlPdf.Location = New System.Drawing.Point(2684, 117)
-        Me.PnlPdf.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PnlPdf.Location = New System.Drawing.Point(1789, 76)
         Me.PnlPdf.Name = "PnlPdf"
-        Me.PnlPdf.Size = New System.Drawing.Size(1113, 652)
+        Me.PnlPdf.Size = New System.Drawing.Size(742, 424)
         Me.PnlPdf.TabIndex = 17
         '
         'Panel7
@@ -646,29 +610,27 @@ Partial Class Menu
         Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1113, 15)
+        Me.Panel7.Size = New System.Drawing.Size(742, 10)
         Me.Panel7.TabIndex = 0
         '
         'Pnltemas
         '
         Me.Pnltemas.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Pnltemas.Controls.Add(Me.MenuStrip4)
-        Me.Pnltemas.Location = New System.Drawing.Point(304, 1038)
-        Me.Pnltemas.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Pnltemas.Location = New System.Drawing.Point(203, 675)
         Me.Pnltemas.Name = "Pnltemas"
-        Me.Pnltemas.Size = New System.Drawing.Size(1113, 49)
+        Me.Pnltemas.Size = New System.Drawing.Size(742, 32)
         Me.Pnltemas.TabIndex = 1
         '
         'MenuStrip4
         '
-        Me.MenuStrip4.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip4.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem33, Me.ToolStripMenuItem41, Me.ToolStripMenuItem45})
         Me.MenuStrip4.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip4.Name = "MenuStrip4"
-        Me.MenuStrip4.Size = New System.Drawing.Size(1113, 35)
+        Me.MenuStrip4.Padding = New System.Windows.Forms.Padding(4, 1, 0, 1)
+        Me.MenuStrip4.Size = New System.Drawing.Size(742, 24)
         Me.MenuStrip4.TabIndex = 0
         Me.MenuStrip4.Text = "MenuStrip4"
         '
@@ -676,112 +638,124 @@ Partial Class Menu
         '
         Me.ToolStripMenuItem33.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsmAbriPdf, Me.TsmTema1, Me.TsmTema2, Me.TsmTema3, Me.ToolStripMenuItem38, Me.ToolStripMenuItem39, Me.ToolStripMenuItem40})
         Me.ToolStripMenuItem33.Name = "ToolStripMenuItem33"
-        Me.ToolStripMenuItem33.Size = New System.Drawing.Size(88, 29)
+        Me.ToolStripMenuItem33.Size = New System.Drawing.Size(60, 22)
         Me.ToolStripMenuItem33.Text = "Archivo"
         '
         'TsmAbriPdf
         '
         Me.TsmAbriPdf.Name = "TsmAbriPdf"
-        Me.TsmAbriPdf.Size = New System.Drawing.Size(190, 34)
+        Me.TsmAbriPdf.Size = New System.Drawing.Size(124, 22)
         Me.TsmAbriPdf.Text = "Abrir PDF"
         '
         'TsmTema1
         '
         Me.TsmTema1.Name = "TsmTema1"
-        Me.TsmTema1.Size = New System.Drawing.Size(190, 34)
+        Me.TsmTema1.Size = New System.Drawing.Size(124, 22)
         Me.TsmTema1.Text = "Tema 1"
         '
         'TsmTema2
         '
         Me.TsmTema2.Name = "TsmTema2"
-        Me.TsmTema2.Size = New System.Drawing.Size(190, 34)
+        Me.TsmTema2.Size = New System.Drawing.Size(124, 22)
         Me.TsmTema2.Text = "Tema 2"
         '
         'TsmTema3
         '
         Me.TsmTema3.Name = "TsmTema3"
-        Me.TsmTema3.Size = New System.Drawing.Size(190, 34)
+        Me.TsmTema3.Size = New System.Drawing.Size(124, 22)
         Me.TsmTema3.Text = "Tema 3"
         '
         'ToolStripMenuItem38
         '
         Me.ToolStripMenuItem38.Name = "ToolStripMenuItem38"
-        Me.ToolStripMenuItem38.Size = New System.Drawing.Size(190, 34)
+        Me.ToolStripMenuItem38.Size = New System.Drawing.Size(124, 22)
         Me.ToolStripMenuItem38.Text = "Tema 4"
         '
         'ToolStripMenuItem39
         '
         Me.ToolStripMenuItem39.Name = "ToolStripMenuItem39"
-        Me.ToolStripMenuItem39.Size = New System.Drawing.Size(190, 34)
+        Me.ToolStripMenuItem39.Size = New System.Drawing.Size(124, 22)
         Me.ToolStripMenuItem39.Text = "Tema 5"
         '
         'ToolStripMenuItem40
         '
         Me.ToolStripMenuItem40.Name = "ToolStripMenuItem40"
-        Me.ToolStripMenuItem40.Size = New System.Drawing.Size(190, 34)
+        Me.ToolStripMenuItem40.Size = New System.Drawing.Size(124, 22)
         Me.ToolStripMenuItem40.Text = "Cerrar"
         '
         'ToolStripMenuItem41
         '
         Me.ToolStripMenuItem41.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TmsVd1, Me.TmsVd2, Me.TmsVd3})
         Me.ToolStripMenuItem41.Name = "ToolStripMenuItem41"
-        Me.ToolStripMenuItem41.Size = New System.Drawing.Size(82, 29)
+        Me.ToolStripMenuItem41.Size = New System.Drawing.Size(54, 22)
         Me.ToolStripMenuItem41.Text = "Videos"
         '
         'TmsVd1
         '
         Me.TmsVd1.Name = "TmsVd1"
-        Me.TmsVd1.Size = New System.Drawing.Size(170, 34)
+        Me.TmsVd1.Size = New System.Drawing.Size(111, 22)
         Me.TmsVd1.Text = "Tema 1"
         '
         'TmsVd2
         '
         Me.TmsVd2.Name = "TmsVd2"
-        Me.TmsVd2.Size = New System.Drawing.Size(170, 34)
+        Me.TmsVd2.Size = New System.Drawing.Size(111, 22)
         Me.TmsVd2.Text = "Tema 2"
         '
         'TmsVd3
         '
         Me.TmsVd3.Name = "TmsVd3"
-        Me.TmsVd3.Size = New System.Drawing.Size(170, 34)
+        Me.TmsVd3.Size = New System.Drawing.Size(111, 22)
         Me.TmsVd3.Text = "Tema 3"
         '
         'ToolStripMenuItem45
         '
         Me.ToolStripMenuItem45.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TmsAud1, Me.TmsAud2, Me.TmsAud3})
         Me.ToolStripMenuItem45.Name = "ToolStripMenuItem45"
-        Me.ToolStripMenuItem45.Size = New System.Drawing.Size(76, 29)
+        Me.ToolStripMenuItem45.Size = New System.Drawing.Size(51, 22)
         Me.ToolStripMenuItem45.Text = "Audio"
         '
         'TmsAud1
         '
         Me.TmsAud1.Name = "TmsAud1"
-        Me.TmsAud1.Size = New System.Drawing.Size(170, 34)
+        Me.TmsAud1.Size = New System.Drawing.Size(111, 22)
         Me.TmsAud1.Text = "Tema 1"
         '
         'TmsAud2
         '
         Me.TmsAud2.Name = "TmsAud2"
-        Me.TmsAud2.Size = New System.Drawing.Size(170, 34)
+        Me.TmsAud2.Size = New System.Drawing.Size(111, 22)
         Me.TmsAud2.Text = "Tema 2"
         '
         'TmsAud3
         '
         Me.TmsAud3.Name = "TmsAud3"
-        Me.TmsAud3.Size = New System.Drawing.Size(170, 34)
+        Me.TmsAud3.Size = New System.Drawing.Size(111, 22)
         Me.TmsAud3.Text = "Tema 3"
         '
         'AlumnoTableAdapter
         '
         Me.AlumnoTableAdapter.ClearBeforeFill = True
         '
+        'lblTemadescription
+        '
+        Me.lblTemadescription.AutoSize = True
+        Me.lblTemadescription.BackColor = System.Drawing.Color.RoyalBlue
+        Me.lblTemadescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTemadescription.ForeColor = System.Drawing.Color.White
+        Me.lblTemadescription.Location = New System.Drawing.Point(275, 27)
+        Me.lblTemadescription.Name = "lblTemadescription"
+        Me.lblTemadescription.Size = New System.Drawing.Size(19, 25)
+        Me.lblTemadescription.TabIndex = 19
+        Me.lblTemadescription.Text = "."
+        '
         'Menu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1924, 1050)
+        Me.ClientSize = New System.Drawing.Size(1283, 1061)
         Me.Controls.Add(Me.Pnltemas)
         Me.Controls.Add(Me.PnlPdf)
         Me.Controls.Add(Me.PnlAudio)
@@ -792,7 +766,6 @@ Partial Class Menu
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Menu"
@@ -902,4 +875,5 @@ Partial Class Menu
     Friend WithEvents ApellidoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CarreraDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CorreoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents lblTemadescription As Label
 End Class

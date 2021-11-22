@@ -22,6 +22,7 @@ Public Class Menu
         PnlPdf.Visible = False
         PnlVidos.Visible = False
         PnlAudio.Visible = False
+        lblTemadescription.Visible = False
         lblFecha.Text = DateTime.Now.ToLongDateString()
         BorrarCamposs()
 
@@ -100,7 +101,11 @@ Public Class Menu
     'Aqui realizaremos la visualizacion de los Videos'
 
     Private Sub TmsVd1_Click(sender As Object, e As EventArgs) Handles TmsVd1.Click
+        'ESTUDIANTE NN VIDEO TEMA 1'
+        lblTemadescription.Visible = False
         PnlVidos.Location = New Point(186, 81)
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 1 : Realidad Virtual"
         PnlVidos.Visible = True
         PnlAudio.Visible = False
         PnlPdf.Visible = False
@@ -113,7 +118,11 @@ Public Class Menu
     End Sub
 
     Private Sub TmsVd2_Click(sender As Object, e As EventArgs) Handles TmsVd2.Click
+        'ESTUDIANTE ANGY VIDEO TEMA 2'
+        lblTemadescription.Visible = False
         PnlVidos.Location = New Point(186, 81)
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 2 : Seguridad Informatica"
         PnlVidos.Visible = True
         PnlAudio.Visible = False
         PnlPdf.Visible = False
@@ -125,22 +134,26 @@ Public Class Menu
     End Sub
 
     Private Sub TmsVd3_Click(sender As Object, e As EventArgs) Handles TmsVd3.Click
+        'ESTUDIANTE CARLOS MARQUEZ VIDEO TEMA 3'
+        lblTemadescription.Visible = False
         PnlVidos.Location = New Point(186, 81)
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 3 : Condicionales para Programación"
         PnlVidos.Visible = True
         PnlAudio.Visible = False
         PnlPdf.Visible = False
         PnlVidos.Controls.Add(lBrowser)
         lBrowser.Location = New Point(150, 85)
         lBrowser.Size = New Size(500, 300)
-        lBrowser.Navigate("https://youtu.be/uHq6JdOCZ6A")
+        lBrowser.Navigate("https://youtu.be/SodnVtmOrlw")
 
 
     End Sub
 
-    'Aqui empizan los archivos pede con los temas a Presentar'
+    'Aqui empizan los archivos PDF con los temas a Presentar'
 
     Private Sub TsmTema1_Click(sender As Object, e As EventArgs) Handles TsmTema1.Click
-
+        lblTemadescription.Visible = False
         Dim nombreArchivo As String = "PdfTemas\Tema1.pdf"
         Dim rutaCompleta As String
         Dim dato As String
@@ -149,7 +162,8 @@ Public Class Menu
 
         AxAcroPDF1.Visible = True
         AxAcroPDF1.src = dato
-
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 1 : Realidad Virtual"
 
         PnlPdf.Location = New Point(186, 81)
         PnlPdf.Visible = True
@@ -160,6 +174,7 @@ Public Class Menu
     End Sub
 
     Private Sub TsmAbriPdf_Click(sender As Object, e As EventArgs) Handles TsmAbriPdf.Click
+        lblTemadescription.Visible = False
         OpenFileDialog1.ShowDialog()
         AxAcroPDF1.src = OpenFileDialog1.FileName
         PnlPdf.Location = New Point(186, 81)
@@ -176,7 +191,8 @@ Public Class Menu
         Dim dato As String
         rutaCompleta = Path.Combine(Directory.GetCurrentDirectory(), nombreArchivo)
         dato = rutaCompleta.ToString()
-
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 2 : Seguridad Informatica"
         AxAcroPDF1.Visible = True
         AxAcroPDF1.src = dato
         PnlPdf.Location = New Point(186, 81)
@@ -193,7 +209,8 @@ Public Class Menu
         Dim dato As String
         rutaCompleta = Path.Combine(Directory.GetCurrentDirectory(), nombreArchivo)
         dato = rutaCompleta.ToString()
-
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 3 : Condicionales para Programación"
         AxAcroPDF1.Visible = True
         PnlPdf.Location = New Point(186, 81)
         PnlPdf.Visible = True
@@ -208,7 +225,8 @@ Public Class Menu
         PnlAudio.Visible = True
         PnlPdf.Visible = False
         PnlVidos.Visible = False
-
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 1 : Realidad Virtual"
         Dim nombreArchivo As String = "Audio\Tema1.wav"
         Dim rutaCompleta As String
         Dim dato As String
@@ -225,8 +243,9 @@ Public Class Menu
         PnlAudio.Visible = True
         PnlPdf.Visible = False
         PnlVidos.Visible = False
-
-        Dim nombreArchivo As String = "Audio\Tema2.wav"
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 3 : Condicionales para Programación"
+        Dim nombreArchivo As String = "Audio\Tema3.wav"
         Dim rutaCompleta As String
         Dim dato As String
 
@@ -241,8 +260,9 @@ Public Class Menu
         PnlAudio.Visible = True
         PnlPdf.Visible = False
         PnlVidos.Visible = False
-
-        Dim nombreArchivo As String = "Audio\Tema3.wav"
+        lblTemadescription.Visible = True
+        lblTemadescription.Text = "Tema 2 : Seguridad Informatica"
+        Dim nombreArchivo As String = "Audio\Tema2.wav"
         Dim rutaCompleta As String
         Dim dato As String
 
