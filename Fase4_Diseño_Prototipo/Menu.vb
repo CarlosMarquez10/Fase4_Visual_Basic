@@ -311,4 +311,16 @@ Public Class Menu
         TxtCarrera.Text = ""
         TxtCorreo.Text = ""
     End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnTerminar.Click
+
+    End Sub
+
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RdbRta1_3.CheckedChanged
+
+    End Sub
 End Class

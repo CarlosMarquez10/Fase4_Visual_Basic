@@ -28,6 +28,7 @@ Partial Class Menu
         Me.lblFecha = New System.Windows.Forms.Label()
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lblTemadescription = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PnlContenido = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -91,7 +92,39 @@ Partial Class Menu
         Me.TmsAud2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TmsAud3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AlumnoTableAdapter = New Fase4_Diseño_Prototipo.BdAlumnoDataSetTableAdapters.AlumnoTableAdapter()
-        Me.lblTemadescription = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.pnlPreg5 = New System.Windows.Forms.Panel()
+        Me.RadioButton16 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton17 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton18 = New System.Windows.Forms.RadioButton()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.pnlPreg4 = New System.Windows.Forms.Panel()
+        Me.RadioButton11 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton12 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton13 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton14 = New System.Windows.Forms.RadioButton()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.pnlPreg3 = New System.Windows.Forms.Panel()
+        Me.RadioButton10 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.pnlPreg2 = New System.Windows.Forms.Panel()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.pnlPreg1 = New System.Windows.Forms.Panel()
+        Me.RdbRta1_3 = New System.Windows.Forms.RadioButton()
+        Me.RdbRta1_2 = New System.Windows.Forms.RadioButton()
+        Me.RdbRta1_1 = New System.Windows.Forms.RadioButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblDatoFecha = New System.Windows.Forms.Label()
+        Me.lblTxtTiempo = New System.Windows.Forms.Label()
+        Me.btnTerminar = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PnlContenido.SuspendLayout()
@@ -118,6 +151,13 @@ Partial Class Menu
         Me.PnlPdf.SuspendLayout()
         Me.Pnltemas.SuspendLayout()
         Me.MenuStrip4.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.pnlPreg5.SuspendLayout()
+        Me.pnlPreg4.SuspendLayout()
+        Me.pnlPreg3.SuspendLayout()
+        Me.pnlPreg2.SuspendLayout()
+        Me.pnlPreg1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -128,7 +168,7 @@ Partial Class Menu
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1283, 61)
+        Me.Panel1.Size = New System.Drawing.Size(3307, 61)
         Me.Panel1.TabIndex = 0
         '
         'lblFecha
@@ -161,8 +201,20 @@ Partial Class Menu
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 1000)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1283, 61)
+        Me.Panel2.Size = New System.Drawing.Size(3307, 61)
         Me.Panel2.TabIndex = 1
+        '
+        'lblTemadescription
+        '
+        Me.lblTemadescription.AutoSize = True
+        Me.lblTemadescription.BackColor = System.Drawing.Color.RoyalBlue
+        Me.lblTemadescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTemadescription.ForeColor = System.Drawing.Color.White
+        Me.lblTemadescription.Location = New System.Drawing.Point(275, 27)
+        Me.lblTemadescription.Name = "lblTemadescription"
+        Me.lblTemadescription.Size = New System.Drawing.Size(19, 25)
+        Me.lblTemadescription.TabIndex = 19
+        Me.lblTemadescription.Text = "."
         '
         'Label7
         '
@@ -737,17 +789,374 @@ Partial Class Menu
         '
         Me.AlumnoTableAdapter.ClearBeforeFill = True
         '
-        'lblTemadescription
+        'Panel3
         '
-        Me.lblTemadescription.AutoSize = True
-        Me.lblTemadescription.BackColor = System.Drawing.Color.RoyalBlue
-        Me.lblTemadescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTemadescription.ForeColor = System.Drawing.Color.White
-        Me.lblTemadescription.Location = New System.Drawing.Point(275, 27)
-        Me.lblTemadescription.Name = "lblTemadescription"
-        Me.lblTemadescription.Size = New System.Drawing.Size(19, 25)
-        Me.lblTemadescription.TabIndex = 19
-        Me.lblTemadescription.Text = "."
+        Me.Panel3.AutoScroll = True
+        Me.Panel3.Controls.Add(Me.Panel6)
+        Me.Panel3.Controls.Add(Me.lblDatoFecha)
+        Me.Panel3.Controls.Add(Me.lblTxtTiempo)
+        Me.Panel3.Location = New System.Drawing.Point(2546, 76)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(742, 424)
+        Me.Panel3.TabIndex = 18
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel6.Controls.Add(Me.Label13)
+        Me.Panel6.Controls.Add(Me.btnTerminar)
+        Me.Panel6.Controls.Add(Me.pnlPreg5)
+        Me.Panel6.Controls.Add(Me.pnlPreg4)
+        Me.Panel6.Controls.Add(Me.pnlPreg3)
+        Me.Panel6.Controls.Add(Me.pnlPreg2)
+        Me.Panel6.Controls.Add(Me.pnlPreg1)
+        Me.Panel6.Location = New System.Drawing.Point(45, 77)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(631, 739)
+        Me.Panel6.TabIndex = 2
+        '
+        'pnlPreg5
+        '
+        Me.pnlPreg5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlPreg5.Controls.Add(Me.RadioButton16)
+        Me.pnlPreg5.Controls.Add(Me.RadioButton17)
+        Me.pnlPreg5.Controls.Add(Me.RadioButton18)
+        Me.pnlPreg5.Controls.Add(Me.Label12)
+        Me.pnlPreg5.Location = New System.Drawing.Point(23, 507)
+        Me.pnlPreg5.Name = "pnlPreg5"
+        Me.pnlPreg5.Size = New System.Drawing.Size(583, 126)
+        Me.pnlPreg5.TabIndex = 7
+        '
+        'RadioButton16
+        '
+        Me.RadioButton16.AutoSize = True
+        Me.RadioButton16.Location = New System.Drawing.Point(26, 93)
+        Me.RadioButton16.Name = "RadioButton16"
+        Me.RadioButton16.Size = New System.Drawing.Size(105, 17)
+        Me.RadioButton16.TabIndex = 3
+        Me.RadioButton16.TabStop = True
+        Me.RadioButton16.Text = "No es importante"
+        Me.RadioButton16.UseVisualStyleBackColor = True
+        '
+        'RadioButton17
+        '
+        Me.RadioButton17.AutoSize = True
+        Me.RadioButton17.Location = New System.Drawing.Point(26, 70)
+        Me.RadioButton17.Name = "RadioButton17"
+        Me.RadioButton17.Size = New System.Drawing.Size(183, 17)
+        Me.RadioButton17.TabIndex = 2
+        Me.RadioButton17.TabStop = True
+        Me.RadioButton17.Text = "Hay que fijarse en que descargas"
+        Me.RadioButton17.UseVisualStyleBackColor = True
+        '
+        'RadioButton18
+        '
+        Me.RadioButton18.AutoSize = True
+        Me.RadioButton18.Location = New System.Drawing.Point(26, 44)
+        Me.RadioButton18.Name = "RadioButton18"
+        Me.RadioButton18.Size = New System.Drawing.Size(244, 17)
+        Me.RadioButton18.TabIndex = 1
+        Me.RadioButton18.TabStop = True
+        Me.RadioButton18.Text = "No, todo o de la app store o play store es legal"
+        Me.RadioButton18.UseVisualStyleBackColor = True
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(13, 9)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(253, 13)
+        Me.Label12.TabIndex = 0
+        Me.Label12.Text = "5 . ¿Es importante saber lo que descargas?"
+        '
+        'pnlPreg4
+        '
+        Me.pnlPreg4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlPreg4.Controls.Add(Me.RadioButton11)
+        Me.pnlPreg4.Controls.Add(Me.RadioButton12)
+        Me.pnlPreg4.Controls.Add(Me.RadioButton13)
+        Me.pnlPreg4.Controls.Add(Me.RadioButton14)
+        Me.pnlPreg4.Controls.Add(Me.Label11)
+        Me.pnlPreg4.Location = New System.Drawing.Point(23, 375)
+        Me.pnlPreg4.Name = "pnlPreg4"
+        Me.pnlPreg4.Size = New System.Drawing.Size(583, 126)
+        Me.pnlPreg4.TabIndex = 6
+        '
+        'RadioButton11
+        '
+        Me.RadioButton11.AutoSize = True
+        Me.RadioButton11.Location = New System.Drawing.Point(26, 102)
+        Me.RadioButton11.Name = "RadioButton11"
+        Me.RadioButton11.Size = New System.Drawing.Size(195, 17)
+        Me.RadioButton11.TabIndex = 4
+        Me.RadioButton11.TabStop = True
+        Me.RadioButton11.Text = "No me importa que no sean seguras"
+        Me.RadioButton11.UseVisualStyleBackColor = True
+        '
+        'RadioButton12
+        '
+        Me.RadioButton12.AutoSize = True
+        Me.RadioButton12.Location = New System.Drawing.Point(26, 79)
+        Me.RadioButton12.Name = "RadioButton12"
+        Me.RadioButton12.Size = New System.Drawing.Size(125, 17)
+        Me.RadioButton12.TabIndex = 3
+        Me.RadioButton12.TabStop = True
+        Me.RadioButton12.Text = "Depende el candado"
+        Me.RadioButton12.UseVisualStyleBackColor = True
+        '
+        'RadioButton13
+        '
+        Me.RadioButton13.AutoSize = True
+        Me.RadioButton13.Location = New System.Drawing.Point(26, 56)
+        Me.RadioButton13.Name = "RadioButton13"
+        Me.RadioButton13.Size = New System.Drawing.Size(154, 17)
+        Me.RadioButton13.TabIndex = 2
+        Me.RadioButton13.TabStop = True
+        Me.RadioButton13.Text = "Todas son seguras siempre"
+        Me.RadioButton13.UseVisualStyleBackColor = True
+        '
+        'RadioButton14
+        '
+        Me.RadioButton14.AutoSize = True
+        Me.RadioButton14.Location = New System.Drawing.Point(26, 33)
+        Me.RadioButton14.Name = "RadioButton14"
+        Me.RadioButton14.Size = New System.Drawing.Size(176, 17)
+        Me.RadioButton14.TabIndex = 1
+        Me.RadioButton14.TabStop = True
+        Me.RadioButton14.Text = "Normalmente todas son seguras"
+        Me.RadioButton14.UseVisualStyleBackColor = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(13, 9)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(243, 13)
+        Me.Label11.TabIndex = 0
+        Me.Label11.Text = "4. ¿Como sabes si una pagina es segura?"
+        '
+        'pnlPreg3
+        '
+        Me.pnlPreg3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlPreg3.Controls.Add(Me.RadioButton10)
+        Me.pnlPreg3.Controls.Add(Me.RadioButton7)
+        Me.pnlPreg3.Controls.Add(Me.RadioButton8)
+        Me.pnlPreg3.Controls.Add(Me.RadioButton9)
+        Me.pnlPreg3.Controls.Add(Me.Label10)
+        Me.pnlPreg3.Location = New System.Drawing.Point(23, 243)
+        Me.pnlPreg3.Name = "pnlPreg3"
+        Me.pnlPreg3.Size = New System.Drawing.Size(583, 126)
+        Me.pnlPreg3.TabIndex = 5
+        '
+        'RadioButton10
+        '
+        Me.RadioButton10.AutoSize = True
+        Me.RadioButton10.Location = New System.Drawing.Point(26, 102)
+        Me.RadioButton10.Name = "RadioButton10"
+        Me.RadioButton10.Size = New System.Drawing.Size(181, 17)
+        Me.RadioButton10.TabIndex = 4
+        Me.RadioButton10.TabStop = True
+        Me.RadioButton10.Text = "Si, porque la que tengo me gusta"
+        Me.RadioButton10.UseVisualStyleBackColor = True
+        '
+        'RadioButton7
+        '
+        Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.Location = New System.Drawing.Point(26, 79)
+        Me.RadioButton7.Name = "RadioButton7"
+        Me.RadioButton7.Size = New System.Drawing.Size(170, 17)
+        Me.RadioButton7.TabIndex = 3
+        Me.RadioButton7.TabStop = True
+        Me.RadioButton7.Text = "No porque es bueno cambiarla"
+        Me.RadioButton7.UseVisualStyleBackColor = True
+        '
+        'RadioButton8
+        '
+        Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.Location = New System.Drawing.Point(26, 56)
+        Me.RadioButton8.Name = "RadioButton8"
+        Me.RadioButton8.Size = New System.Drawing.Size(166, 17)
+        Me.RadioButton8.TabIndex = 2
+        Me.RadioButton8.TabStop = True
+        Me.RadioButton8.Text = "No, porque si no se te olvidan"
+        Me.RadioButton8.UseVisualStyleBackColor = True
+        '
+        'RadioButton9
+        '
+        Me.RadioButton9.AutoSize = True
+        Me.RadioButton9.Location = New System.Drawing.Point(26, 33)
+        Me.RadioButton9.Name = "RadioButton9"
+        Me.RadioButton9.Size = New System.Drawing.Size(244, 17)
+        Me.RadioButton9.TabIndex = 1
+        Me.RadioButton9.TabStop = True
+        Me.RadioButton9.Text = "No, porque si descubren una descubren todas"
+        Me.RadioButton9.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(13, 9)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(360, 13)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "3. ¿Es es recomendable tener la misma contraseña para todo?"
+        '
+        'pnlPreg2
+        '
+        Me.pnlPreg2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlPreg2.Controls.Add(Me.RadioButton4)
+        Me.pnlPreg2.Controls.Add(Me.RadioButton5)
+        Me.pnlPreg2.Controls.Add(Me.RadioButton6)
+        Me.pnlPreg2.Controls.Add(Me.Label9)
+        Me.pnlPreg2.Location = New System.Drawing.Point(23, 132)
+        Me.pnlPreg2.Name = "pnlPreg2"
+        Me.pnlPreg2.Size = New System.Drawing.Size(583, 104)
+        Me.pnlPreg2.TabIndex = 4
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(26, 79)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(284, 17)
+        Me.RadioButton4.TabIndex = 3
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "integridad autenticacion disponibilidad confidencialidad"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(26, 56)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(273, 17)
+        Me.RadioButton5.TabIndex = 2
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "prevencion-disponibilidad-confidencialidad-integridad"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Location = New System.Drawing.Point(26, 33)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(267, 17)
+        Me.RadioButton6.TabIndex = 1
+        Me.RadioButton6.TabStop = True
+        Me.RadioButton6.Text = "seguridad-integridad-autenticación-confidencialidad"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(13, 9)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(441, 13)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "2 . ¿cúales son las 4 principales caracteristicas de la seguridad informática?"
+        '
+        'pnlPreg1
+        '
+        Me.pnlPreg1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.pnlPreg1.Controls.Add(Me.RdbRta1_3)
+        Me.pnlPreg1.Controls.Add(Me.RdbRta1_2)
+        Me.pnlPreg1.Controls.Add(Me.RdbRta1_1)
+        Me.pnlPreg1.Controls.Add(Me.Label1)
+        Me.pnlPreg1.Location = New System.Drawing.Point(23, 22)
+        Me.pnlPreg1.Name = "pnlPreg1"
+        Me.pnlPreg1.Size = New System.Drawing.Size(583, 104)
+        Me.pnlPreg1.TabIndex = 0
+        '
+        'RdbRta1_3
+        '
+        Me.RdbRta1_3.AutoSize = True
+        Me.RdbRta1_3.Location = New System.Drawing.Point(26, 79)
+        Me.RdbRta1_3.Name = "RdbRta1_3"
+        Me.RdbRta1_3.Size = New System.Drawing.Size(124, 17)
+        Me.RdbRta1_3.TabIndex = 3
+        Me.RdbRta1_3.TabStop = True
+        Me.RdbRta1_3.Text = "Ambas son correctas"
+        Me.RdbRta1_3.UseVisualStyleBackColor = True
+        '
+        'RdbRta1_2
+        '
+        Me.RdbRta1_2.AutoSize = True
+        Me.RdbRta1_2.Location = New System.Drawing.Point(26, 56)
+        Me.RdbRta1_2.Name = "RdbRta1_2"
+        Me.RdbRta1_2.Size = New System.Drawing.Size(320, 17)
+        Me.RdbRta1_2.TabIndex = 2
+        Me.RdbRta1_2.TabStop = True
+        Me.RdbRta1_2.Text = "Disciplina que protege la información en un sistema informático"
+        Me.RdbRta1_2.UseVisualStyleBackColor = True
+        '
+        'RdbRta1_1
+        '
+        Me.RdbRta1_1.AutoSize = True
+        Me.RdbRta1_1.Location = New System.Drawing.Point(26, 33)
+        Me.RdbRta1_1.Name = "RdbRta1_1"
+        Me.RdbRta1_1.Size = New System.Drawing.Size(192, 17)
+        Me.RdbRta1_1.TabIndex = 1
+        Me.RdbRta1_1.TabStop = True
+        Me.RdbRta1_1.Text = "Ciencia que estudia a la informática"
+        Me.RdbRta1_1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(13, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(215, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "1. ¿Que es la seguridad informática?"
+        '
+        'lblDatoFecha
+        '
+        Me.lblDatoFecha.AutoSize = True
+        Me.lblDatoFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDatoFecha.ForeColor = System.Drawing.Color.Red
+        Me.lblDatoFecha.Location = New System.Drawing.Point(134, 36)
+        Me.lblDatoFecha.Name = "lblDatoFecha"
+        Me.lblDatoFecha.Size = New System.Drawing.Size(101, 31)
+        Me.lblDatoFecha.TabIndex = 1
+        Me.lblDatoFecha.Text = "Label1"
+        '
+        'lblTxtTiempo
+        '
+        Me.lblTxtTiempo.AutoSize = True
+        Me.lblTxtTiempo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTxtTiempo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblTxtTiempo.Location = New System.Drawing.Point(41, 43)
+        Me.lblTxtTiempo.Name = "lblTxtTiempo"
+        Me.lblTxtTiempo.Size = New System.Drawing.Size(93, 24)
+        Me.lblTxtTiempo.TabIndex = 0
+        Me.lblTxtTiempo.Text = "Tiempo :"
+        '
+        'btnTerminar
+        '
+        Me.btnTerminar.BackColor = System.Drawing.Color.Green
+        Me.btnTerminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTerminar.ForeColor = System.Drawing.Color.White
+        Me.btnTerminar.Location = New System.Drawing.Point(119, 681)
+        Me.btnTerminar.Name = "btnTerminar"
+        Me.btnTerminar.Size = New System.Drawing.Size(411, 35)
+        Me.btnTerminar.TabIndex = 8
+        Me.btnTerminar.Text = "Terminar"
+        Me.btnTerminar.UseVisualStyleBackColor = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(224, 647)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(195, 24)
+        Me.Label13.TabIndex = 9
+        Me.Label13.Text = "Terminar La Prueba"
         '
         'Menu
         '
@@ -755,7 +1164,8 @@ Partial Class Menu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1283, 1061)
+        Me.ClientSize = New System.Drawing.Size(3307, 1061)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Pnltemas)
         Me.Controls.Add(Me.PnlPdf)
         Me.Controls.Add(Me.PnlAudio)
@@ -804,6 +1214,20 @@ Partial Class Menu
         Me.Pnltemas.PerformLayout()
         Me.MenuStrip4.ResumeLayout(False)
         Me.MenuStrip4.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.pnlPreg5.ResumeLayout(False)
+        Me.pnlPreg5.PerformLayout()
+        Me.pnlPreg4.ResumeLayout(False)
+        Me.pnlPreg4.PerformLayout()
+        Me.pnlPreg3.ResumeLayout(False)
+        Me.pnlPreg3.PerformLayout()
+        Me.pnlPreg2.ResumeLayout(False)
+        Me.pnlPreg2.PerformLayout()
+        Me.pnlPreg1.ResumeLayout(False)
+        Me.pnlPreg1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -876,4 +1300,37 @@ Partial Class Menu
     Friend WithEvents CarreraDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents CorreoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents lblTemadescription As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents lblDatoFecha As Label
+    Friend WithEvents lblTxtTiempo As Label
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents pnlPreg5 As Panel
+    Friend WithEvents RadioButton16 As RadioButton
+    Friend WithEvents RadioButton17 As RadioButton
+    Friend WithEvents RadioButton18 As RadioButton
+    Friend WithEvents Label12 As Label
+    Friend WithEvents pnlPreg4 As Panel
+    Friend WithEvents RadioButton11 As RadioButton
+    Friend WithEvents RadioButton12 As RadioButton
+    Friend WithEvents RadioButton13 As RadioButton
+    Friend WithEvents RadioButton14 As RadioButton
+    Friend WithEvents Label11 As Label
+    Friend WithEvents pnlPreg3 As Panel
+    Friend WithEvents RadioButton10 As RadioButton
+    Friend WithEvents RadioButton7 As RadioButton
+    Friend WithEvents RadioButton8 As RadioButton
+    Friend WithEvents RadioButton9 As RadioButton
+    Friend WithEvents Label10 As Label
+    Friend WithEvents pnlPreg2 As Panel
+    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents RadioButton6 As RadioButton
+    Friend WithEvents Label9 As Label
+    Friend WithEvents pnlPreg1 As Panel
+    Friend WithEvents RdbRta1_3 As RadioButton
+    Friend WithEvents RdbRta1_2 As RadioButton
+    Friend WithEvents RdbRta1_1 As RadioButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents btnTerminar As Button
 End Class
