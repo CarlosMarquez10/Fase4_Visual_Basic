@@ -384,13 +384,34 @@ Public Class Menu
 
         Else
             NotaFinal()
+            LimpiarCampos()
         End If
 
     End Sub
+    Sub LimpiarCampos()
 
+        RdbRta1_1.Checked = False
+        RdbRta1_2.Checked = False
+        RdbRta1_3.Checked = False
+        RdbRta2_1.Checked = False
+        RdbRta2_2.Checked = False
+        RdbRta2_3.Checked = False
+        RdbRta3_1.Checked = False
+        RdbRta3_2.Checked = False
+        RdbRta3_3.Checked = False
+        RdbRta3_4.Checked = False
+        RdbRta4_1.Checked = False
+        RdbRta4_2.Checked = False
+        RdbRta4_3.Checked = False
+        RdbRta4_4.Checked = False
+        RdbRta5_1.Checked = False
+        RdbRta5_2.Checked = False
+        RdbRta5_3.Checked = False
+
+    End Sub
     Private Sub NotaFinal()
-        Dim Nota, Notaxf As Integer
-        Nota = 0
+        Dim Notaxf As Integer
+        Notaxf = 0
         Notaxf = NotaQuiz()
 
         If (Notaxf = 5) Then
@@ -398,10 +419,12 @@ Public Class Menu
             MsgBox("Exelecnte... Aprobo el Quiz")
 
         Else
-            If (Notaxf = 5) Then
-                Timer1.Stop()
-                MsgBox("No aprobo el Quiz")
-            End If
+
+            Timer1.Stop()
+            MsgBox("No aprobo el Quiz, vuelva a intentarlo")
+            PnlQuiz.Visible = False
+
+
         End If
 
     End Sub
