@@ -1,5 +1,7 @@
 ﻿Imports System.IO
 
+
+
 Public Class Menu
 
     Dim lBrowser As New WebBrowser()
@@ -23,6 +25,7 @@ Public Class Menu
         PnlVidos.Visible = False
         PnlAudio.Visible = False
         lblTemadescription.Visible = False
+        PnlQuiz.Visible = False
         lblFecha.Text = DateTime.Now.ToLongDateString()
         BorrarCamposs()
 
@@ -43,6 +46,7 @@ Public Class Menu
         PnlPdf.Location = New Point(186, 67)
         PnlVidos.Location = New Point(186, 67)
         PnlAudio.Location = New Point(186, 67)
+        PnlQuiz.Location = New Point(186, 67)
 
     End Sub
 
@@ -60,6 +64,7 @@ Public Class Menu
         PnlPdf.Location = New Point(130, 67)
         PnlVidos.Location = New Point(130, 67)
         PnlAudio.Location = New Point(130, 67)
+        PnlQuiz.Location = New Point(130, 67)
     End Sub
     'Aqui tenemos los Botones de la barra de menu '
     Private Sub BtnRegistro_Click(sender As Object, e As EventArgs) Handles BtnRegistro.Click
@@ -312,15 +317,226 @@ Public Class Menu
         TxtCorreo.Text = ""
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        Dim seg = --1
+        Dim min As Integer
+        Dim Minutos = min.ToString("00")
+        Dim Segundo = seg.ToString("00")
+        lblFecha.Text = DateTime.Now.ToLongDateString()
+
+        If lblDatoFecha.Text = "00:00" Then
+
+            If PnlQuiz.Visible = True Then
+
+
+                Timer1.Stop()
+
+                min = 2
+                seg = 59
+
+            End If
+
+        End If
+
+
+        lblDatoFecha.Text = Minutos + ":" + Segundo
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnTerminar.Click
+    Private Sub btnTerminar_Click(sender As Object, e As EventArgs) Handles btnTerminar.Click
+        Dim preg1, preg2, preg3, preg4, Notax, preg5 As Integer
+
+        Notax = NotaQuiz()
+        preg1 = PreguntaUno()
+        preg2 = PreguntaDos()
+        preg3 = PreguntaTres()
+        preg4 = PreguntaCuatro()
+        preg5 = PreguntaQuinta()
+
+        If Notax < 5 Then
+            If preg2 = 0 Then
+                pnlPreg2.BackColor = Color.Red
+            End If
+
+            If preg3 = 0 Then
+                pnlPreg3.BackColor = Color.Red
+            End If
+
+            If preg4 = 0 Then
+                pnlPreg4.BackColor = Color.Red
+            End If
+
+            If preg5 = 0 Then
+                pnlPreg5.BackColor = Color.Red
+            End If
+
+            If preg1 = 0 Then
+                pnlPreg1.BackColor = Color.Red
+            End If
+            Notax = 0
+        End If
+
+        If (preg1 = 0 Or preg2 = 0 Or preg3 = 0 Or preg4 = 0 Or preg5 = 0) Then
+
+            MsgBox("Deve diligernciar todos los Campos")
+
+        Else
+            NotaFinal()
+        End If
 
     End Sub
 
-    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RdbRta1_3.CheckedChanged
+    Private Sub NotaFinal()
+        Dim Nota, Notaxf As Integer
+        Nota = 0
+        Notaxf = NotaQuiz()
+
+        If (Notaxf = 5) Then
+            Timer1.Stop()
+            MsgBox("Exelecnte... Aprobo el Quiz")
+
+        Else
+            If (Notaxf = 5) Then
+                Timer1.Stop()
+                MsgBox("No aprobo el Quiz")
+            End If
+        End If
+
+    End Sub
+
+    Private Function NotaQuiz() As Integer
+        Dim Nota = 0
+
+        If RdbRta1_1.Checked = True Then
+            Nota += 1
+        End If
+
+        If RdbRta1_1.Checked = True Then
+            Nota += 1
+        End If
+
+
+        If RdbRta1_1.Checked = True Then
+            Nota += 1
+        End If
+
+
+        If RdbRta1_1.Checked = True Then
+            Nota += 1
+        End If
+
+        Return Nota
+
+    End Function
+
+
+    Private Function PreguntaUno() As Integer
+
+        Dim Nota1 = 0
+        If RdbRta1_1.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta1_2.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta1_3.Checked = True Then
+            Nota1 += 1
+        End If
+
+        Return Nota1
+
+    End Function
+
+    Private Function PreguntaDos() As Integer
+
+        Dim Nota1 = 0
+        If RdbRta1_1.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta1_2.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta1_3.Checked = True Then
+            Nota1 += 1
+        End If
+
+        Return Nota1
+
+    End Function
+
+    Private Function PreguntaTres() As Integer
+
+        Dim Nota1 = 0
+        If RdbRta3_1.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta3_2.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta3_3.Checked = True Then
+            Nota1 += 1
+        End If
+
+        If RdbRta3_4.Checked = True Then
+            Nota1 += 1
+        End If
+
+        Return Nota1
+
+    End Function
+
+    Private Function PreguntaCuatro() As Integer
+
+        Dim Nota1 = 0
+        If RdbRta4_1.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta4_2.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta4_3.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta4_4.Checked = True Then
+            Nota1 += 1
+        End If
+        Return Nota1
+
+    End Function
+
+    Private Function PreguntaQuinta() As Integer
+
+        Dim Nota1 = 0
+        If RdbRta5_1.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta5_2.Checked = True Then
+            Nota1 += 1
+        End If
+        If RdbRta5_3.Checked = True Then
+            Nota1 += 1
+        End If
+
+        Return Nota1
+
+    End Function
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles PnlQuiz.Paint
+        lblDatoFecha.Text = "03:00"
+    End Sub
+
+    Private Sub Menu_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Timer1.Stop()
+    End Sub
+
+    Private Sub btnEvaTema2_Click(sender As Object, e As EventArgs) Handles btnEvaTema2.Click
+        PnlAudio.Visible = False
+        PnlPdf.Visible = False
+        PnlVidos.Visible = False
+        Timer1.Start()
+        PnlQuiz.Visible = True
 
     End Sub
 End Class
