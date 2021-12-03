@@ -606,37 +606,40 @@ Public Class Menu
         Timer1.Enabled = True
         PnlQuiz.Visible = True
 
-        lblPreg1.Text = "PREGUNTA"
+        lblPreg1.Text = "1.¿Cuáles son los dos tipos de condicionales en C++?"
 
-        RdbRta1_1.Text = "pregunta verdadera"
-        RdbRta1_2.Text = ""
-        RdbRta1_3.Text = ""
+        RdbRta1_1.Text = "For/go"
+        RdbRta1_2.Text = "if-else/ switch"
+        RdbRta1_3.Text = "while/ do while"
 
-        lblPreg2.Text = "PREGUNTA"
 
-        RdbRta2_1.Text = ""
-        RdbRta2_2.Text = "pregunta verdadera"
-        RdbRta2_3.Text = ""
+        lblPreg2.Text = "2.¿Que son los operadores relacionales?"
 
-        lblPreg3.Text = "PREGUNTA"
+        RdbRta2_1.Text = "son operadores que sirven para dar funciones aritmeticas"
+        RdbRta2_2.Text = "son operadores que nos permiten evaluar las relaciones entre un par de operandos"
+        RdbRta2_3.Text = "son operadores que sirven para dar funciones qe nos permiten conectar un par de operandos"
 
-        RdbRta3_1.Text = "pregunta verdadera"
-        RdbRta3_2.Text = ""
-        RdbRta3_3.Text = ""
-        RdbRta3_4.Text = ""
+        lblPreg3.Text = "3.¿Que son las sentencias condicionales en C++?"
 
-        lblPreg4.Text = "PREGUNTA"
+        RdbRta3_1.Text = "Es un ciclo el for,while o do while"
+        RdbRta3_2.Text = "son estructuras de ocntrol que sirven para comparar dos valores"
+        RdbRta3_3.Text = "Son token que sirven para abirir una funcion c++"
 
-        RdbRta4_1.Text = ""
-        RdbRta4_2.Text = "pregunta verdadera"
-        RdbRta4_3.Text = ""
-        RdbRta4_4.Text = ""
 
-        lblPreg5.Text = "PREGUNTA"
+        lblPreg4.Text = "4.Qué tipo de datos son válidos para la expresión en la sentencia Switch"
 
-        RdbRta5_1.Text = "pregunta verdadera"
-        RdbRta5_2.Text = ""
-        RdbRta5_3.Text = ""
+        RdbRta4_1.Text = "Caracteres."
+        RdbRta4_2.Text = "Apuntadores"
+        RdbRta4_3.Text = "Enteros "
+
+
+
+        lblPreg5.Text = "5.¿Cuantos IF pueden anidarse?
+"
+
+        RdbRta5_1.Text = "Ninguno"
+        RdbRta5_2.Text = "1"
+        RdbRta5_3.Text = "Los que sean necesarios "
     End Sub
 
     Private Sub btnEvaTema3_Click(sender As Object, e As EventArgs) Handles btnEvaTema3.Click
