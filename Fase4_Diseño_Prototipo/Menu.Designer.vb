@@ -91,6 +91,10 @@ Partial Class Menu
         Me.TmsAud1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TmsAud2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TmsAud3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EvaluacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnEvaTema1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnEvaTema2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnEvaTema3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AlumnoTableAdapter = New Fase4_Diseño_Prototipo.BdAlumnoDataSetTableAdapters.AlumnoTableAdapter()
         Me.PnlQuiz = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -126,10 +130,6 @@ Partial Class Menu
         Me.lblDatoFecha = New System.Windows.Forms.Label()
         Me.lblTxtTiempo = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.EvaluacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnEvaTema1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnEvaTema2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnEvaTema3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PnlContenido.SuspendLayout()
@@ -775,20 +775,45 @@ Partial Class Menu
         'TmsAud1
         '
         Me.TmsAud1.Name = "TmsAud1"
-        Me.TmsAud1.Size = New System.Drawing.Size(180, 22)
+        Me.TmsAud1.Size = New System.Drawing.Size(111, 22)
         Me.TmsAud1.Text = "Tema 1"
         '
         'TmsAud2
         '
         Me.TmsAud2.Name = "TmsAud2"
-        Me.TmsAud2.Size = New System.Drawing.Size(180, 22)
+        Me.TmsAud2.Size = New System.Drawing.Size(111, 22)
         Me.TmsAud2.Text = "Tema 2"
         '
         'TmsAud3
         '
         Me.TmsAud3.Name = "TmsAud3"
-        Me.TmsAud3.Size = New System.Drawing.Size(180, 22)
+        Me.TmsAud3.Size = New System.Drawing.Size(111, 22)
         Me.TmsAud3.Text = "Tema 3"
+        '
+        'EvaluacionToolStripMenuItem
+        '
+        Me.EvaluacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnEvaTema1, Me.btnEvaTema2, Me.btnEvaTema3})
+        Me.EvaluacionToolStripMenuItem.Name = "EvaluacionToolStripMenuItem"
+        Me.EvaluacionToolStripMenuItem.Size = New System.Drawing.Size(76, 22)
+        Me.EvaluacionToolStripMenuItem.Text = "Evaluacion"
+        '
+        'btnEvaTema1
+        '
+        Me.btnEvaTema1.Name = "btnEvaTema1"
+        Me.btnEvaTema1.Size = New System.Drawing.Size(180, 22)
+        Me.btnEvaTema1.Text = "Tema_1"
+        '
+        'btnEvaTema2
+        '
+        Me.btnEvaTema2.Name = "btnEvaTema2"
+        Me.btnEvaTema2.Size = New System.Drawing.Size(113, 22)
+        Me.btnEvaTema2.Text = "Tema_2"
+        '
+        'btnEvaTema3
+        '
+        Me.btnEvaTema3.Name = "btnEvaTema3"
+        Me.btnEvaTema3.Size = New System.Drawing.Size(180, 22)
+        Me.btnEvaTema3.Text = "Tema_3"
         '
         'AlumnoTableAdapter
         '
@@ -1165,32 +1190,7 @@ Partial Class Menu
         '
         'Timer1
         '
-        Me.Timer1.Interval = 3000
-        '
-        'EvaluacionToolStripMenuItem
-        '
-        Me.EvaluacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnEvaTema1, Me.btnEvaTema2, Me.btnEvaTema3})
-        Me.EvaluacionToolStripMenuItem.Name = "EvaluacionToolStripMenuItem"
-        Me.EvaluacionToolStripMenuItem.Size = New System.Drawing.Size(76, 22)
-        Me.EvaluacionToolStripMenuItem.Text = "Evaluacion"
-        '
-        'btnEvaTema1
-        '
-        Me.btnEvaTema1.Name = "btnEvaTema1"
-        Me.btnEvaTema1.Size = New System.Drawing.Size(180, 22)
-        Me.btnEvaTema1.Text = "Tema_1"
-        '
-        'btnEvaTema2
-        '
-        Me.btnEvaTema2.Name = "btnEvaTema2"
-        Me.btnEvaTema2.Size = New System.Drawing.Size(180, 22)
-        Me.btnEvaTema2.Text = "Tema_2"
-        '
-        'btnEvaTema3
-        '
-        Me.btnEvaTema3.Name = "btnEvaTema3"
-        Me.btnEvaTema3.Size = New System.Drawing.Size(180, 22)
-        Me.btnEvaTema3.Text = "Tema_3"
+        Me.Timer1.Interval = 1000
         '
         'Menu
         '

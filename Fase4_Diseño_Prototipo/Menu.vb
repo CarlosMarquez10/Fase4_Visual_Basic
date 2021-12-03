@@ -76,6 +76,7 @@ Public Class Menu
         Pnltemas.Visible = False
         PnlPdf.Visible = False
         PnlAudio.Visible = False
+        PnlQuiz.Visible = False
     End Sub
 
     Private Sub btnConsulta_Click(sender As Object, e As EventArgs) Handles btnConsulta.Click
@@ -88,6 +89,7 @@ Public Class Menu
         Pnltemas.Visible = False
         PnlPdf.Visible = False
         PnlAudio.Visible = False
+        PnlQuiz.Visible = False
     End Sub
 
     Private Sub btnTemas_Click(sender As Object, e As EventArgs) Handles btnTemas.Click
@@ -320,28 +322,12 @@ Public Class Menu
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-        Dim seg = --1
-        Dim min As Integer
-        Dim Minutos = min.ToString("00")
-        Dim Segundo = seg.ToString("00")
-        lblFecha.Text = DateTime.Now.ToLongDateString()
-
-        If lblDatoFecha.Text = "00:00" Then
-
-            If PnlQuiz.Visible = True Then
-
-
-                Timer1.Stop()
-
-                min = 2
-                seg = 59
-
-            End If
-
+        lblDatoFecha.Text += -1
+        If lblDatoFecha.Text = 0 Then
+            Timer1.Enabled = False
         End If
 
 
-        lblDatoFecha.Text = Minutos + ":" + Segundo
 
     End Sub
 
@@ -385,6 +371,7 @@ Public Class Menu
         Else
             NotaFinal()
             LimpiarCampos()
+            restablecerColor()
         End If
 
     End Sub
@@ -417,13 +404,14 @@ Public Class Menu
         If (Notaxf = 5) Then
             Timer1.Stop()
             MsgBox("Exelecnte... Aprobo el Quiz")
-
+            Timer1.Enabled = False
+            PnlQuiz.Visible = False
         Else
 
             Timer1.Stop()
             MsgBox("No aprobo el Quiz, vuelva a intentarlo")
             PnlQuiz.Visible = False
-
+            Timer1.Enabled = False
 
         End If
 
@@ -436,17 +424,20 @@ Public Class Menu
             Nota += 1
         End If
 
-        If RdbRta1_1.Checked = True Then
+        If RdbRta2_2.Checked = True Then
+            Nota += 1
+        End If
+
+        If RdbRta3_1.Checked = True Then
+            Nota += 1
+        End If
+
+        If RdbRta4_2.Checked = True Then
             Nota += 1
         End If
 
 
-        If RdbRta1_1.Checked = True Then
-            Nota += 1
-        End If
-
-
-        If RdbRta1_1.Checked = True Then
+        If RdbRta5_1.Checked = True Then
             Nota += 1
         End If
 
@@ -545,9 +536,17 @@ Public Class Menu
         Return Nota1
 
     End Function
+    Sub restablecerColor()
 
+        pnlPreg1.BackColor = Color.FromArgb(255, 224, 192)
+        pnlPreg2.BackColor = Color.FromArgb(255, 224, 192)
+        pnlPreg3.BackColor = Color.FromArgb(255, 224, 192)
+        pnlPreg4.BackColor = Color.FromArgb(255, 224, 192)
+        pnlPreg5.BackColor = Color.FromArgb(255, 224, 192)
+
+    End Sub
     Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles PnlQuiz.Paint
-        lblDatoFecha.Text = "03:00"
+        lblDatoFecha.Text = 120
     End Sub
 
     Private Sub Menu_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -558,8 +557,88 @@ Public Class Menu
         PnlAudio.Visible = False
         PnlPdf.Visible = False
         PnlVidos.Visible = False
-        Timer1.Start()
+        Timer1.Enabled = True
         PnlQuiz.Visible = True
 
+    End Sub
+
+    Private Sub btnEvaTema1_Click(sender As Object, e As EventArgs) Handles btnEvaTema1.Click
+        PnlAudio.Visible = False
+        PnlPdf.Visible = False
+        PnlVidos.Visible = False
+        Timer1.Enabled = True
+        PnlQuiz.Visible = True
+
+        lblPreg1.Text = "PREGUNTA"
+
+        RdbRta1_1.Text = "pregunta verdadera"
+        RdbRta1_2.Text = ""
+        RdbRta1_3.Text = ""
+
+        lblPreg2.Text = "PREGUNTA"
+
+        RdbRta2_1.Text = ""
+        RdbRta2_2.Text = "pregunta verdadera"
+        RdbRta2_3.Text = ""
+
+        lblPreg3.Text = "PREGUNTA"
+
+        RdbRta3_1.Text = "pregunta verdadera"
+        RdbRta3_2.Text = ""
+        RdbRta3_3.Text = ""
+        RdbRta3_4.Text = ""
+
+        lblPreg4.Text = "PREGUNTA"
+
+        RdbRta4_1.Text = ""
+        RdbRta4_2.Text = "pregunta verdadera"
+        RdbRta4_3.Text = ""
+        RdbRta4_4.Text = ""
+
+        lblPreg5.Text = "PREGUNTA"
+
+        RdbRta5_1.Text = "pregunta verdadera"
+        RdbRta5_2.Text = ""
+        RdbRta5_3.Text = ""
+    End Sub
+
+    Private Sub btnEvaTema3_Click(sender As Object, e As EventArgs) Handles btnEvaTema3.Click
+        PnlAudio.Visible = False
+        PnlPdf.Visible = False
+        PnlVidos.Visible = False
+        Timer1.Enabled = True
+        PnlQuiz.Visible = True
+
+        lblPreg1.Text = ""
+
+        RdbRta1_1.Text = ""
+        RdbRta1_2.Text = ""
+        RdbRta1_3.Text = ""
+
+        lblPreg2.Text = ""
+
+        RdbRta2_1.Text = ""
+        RdbRta2_2.Text = ""
+        RdbRta2_3.Text = ""
+
+        lblPreg3.Text = ""
+
+        RdbRta3_1.Text = ""
+        RdbRta3_2.Text = ""
+        RdbRta3_3.Text = ""
+        RdbRta3_4.Text = ""
+
+        lblPreg4.Text = ""
+
+        RdbRta4_1.Text = ""
+        RdbRta4_2.Text = ""
+        RdbRta4_3.Text = ""
+        RdbRta4_4.Text = ""
+
+        lblPreg5.Text = ""
+
+        RdbRta5_1.Text = ""
+        RdbRta5_2.Text = ""
+        RdbRta5_3.Text = ""
     End Sub
 End Class
