@@ -366,7 +366,7 @@ Public Class Menu
 
         If (preg1 = 0 Or preg2 = 0 Or preg3 = 0 Or preg4 = 0 Or preg5 = 0) Then
 
-            MsgBox("Deve diligernciar todos los Campos")
+            MsgBox("Debe diligenciar todos los Campos")
 
         Else
             NotaFinal()
@@ -386,11 +386,9 @@ Public Class Menu
         RdbRta3_1.Checked = False
         RdbRta3_2.Checked = False
         RdbRta3_3.Checked = False
-        RdbRta3_4.Checked = False
         RdbRta4_1.Checked = False
         RdbRta4_2.Checked = False
         RdbRta4_3.Checked = False
-        RdbRta4_4.Checked = False
         RdbRta5_1.Checked = False
         RdbRta5_2.Checked = False
         RdbRta5_3.Checked = False
@@ -403,7 +401,7 @@ Public Class Menu
 
         If (Notaxf = 5) Then
             Timer1.Stop()
-            MsgBox("Exelecnte... Aprobo el Quiz")
+            MsgBox("Excelente... Aprobo el Quiz")
             Timer1.Enabled = False
             PnlQuiz.Visible = False
         Else
@@ -475,7 +473,6 @@ Public Class Menu
         If RdbRta1_3.Checked = True Then
             Nota1 += 1
         End If
-
         Return Nota1
 
     End Function
@@ -490,10 +487,6 @@ Public Class Menu
             Nota1 += 1
         End If
         If RdbRta3_3.Checked = True Then
-            Nota1 += 1
-        End If
-
-        If RdbRta3_4.Checked = True Then
             Nota1 += 1
         End If
 
@@ -513,9 +506,7 @@ Public Class Menu
         If RdbRta4_3.Checked = True Then
             Nota1 += 1
         End If
-        If RdbRta4_4.Checked = True Then
-            Nota1 += 1
-        End If
+
         Return Nota1
 
     End Function
@@ -606,40 +597,38 @@ Public Class Menu
         Timer1.Enabled = True
         PnlQuiz.Visible = True
 
-        lblPreg1.Text = "1.¿Cuáles son los dos tipos de condicionales en C++?"
+        lblPreg1.Text = "1.¿Que es la realidad virtual?"
 
-        RdbRta1_1.Text = "For/go"
-        RdbRta1_2.Text = "if-else/ switch"
-        RdbRta1_3.Text = "while/ do while"
+        RdbRta1_1.Text = "Simulación generada por computadora"
+        RdbRta1_2.Text = "Es algo ficticio a partir de una pantalla"
+        RdbRta1_3.Text = "Ciencia ficción"
 
+        lblPreg2.Text = "2.¿A quién se le atribuye el término de la realidad aumentada ?"
 
-        lblPreg2.Text = "2.¿Que son los operadores relacionales?"
+        RdbRta2_1.Text = "Thomal hutg"
+        RdbRta2_2.Text = "Thomas Caudell"
+        RdbRta2_3.Text = "Tihm caudell"
 
-        RdbRta2_1.Text = "son operadores que sirven para dar funciones aritmeticas"
-        RdbRta2_2.Text = "son operadores que nos permiten evaluar las relaciones entre un par de operandos"
-        RdbRta2_3.Text = "son operadores que sirven para dar funciones qe nos permiten conectar un par de operandos"
+        lblPreg3.Text = "3.¿Cuál es el objetivo de la realidad virtual?"
 
-        lblPreg3.Text = "3.¿Que son las sentencias condicionales en C++?"
-
-        RdbRta3_1.Text = "Es un ciclo el for,while o do while"
-        RdbRta3_2.Text = "son estructuras de ocntrol que sirven para comparar dos valores"
-        RdbRta3_3.Text = "Son token que sirven para abirir una funcion c++"
-
-
-        lblPreg4.Text = "4.Qué tipo de datos son válidos para la expresión en la sentencia Switch"
-
-        RdbRta4_1.Text = "Caracteres."
-        RdbRta4_2.Text = "Apuntadores"
-        RdbRta4_3.Text = "Enteros "
+        RdbRta3_1.Text = "Es sumergirse por completo en un mundo virtual"
+        RdbRta3_2.Text = "En la que te enfrentas con el mundo virtual"
+        RdbRta3_3.Text = "Creas tu propia realidad"
 
 
+        lblPreg4.Text = "4.¿cuales son los tipos de gafas más conocidos en la relaidad virtual?"
 
-        lblPreg5.Text = "5.¿Cuantos IF pueden anidarse?
-"
+        RdbRta4_1.Text = "Gear VR y Worddin"
+        RdbRta4_2.Text = "Oculus Rift y Gear VR"
+        RdbRta4_3.Text = "Wordding y Oculus"
 
-        RdbRta5_1.Text = "Ninguno"
-        RdbRta5_2.Text = "1"
-        RdbRta5_3.Text = "Los que sean necesarios "
+
+        lblPreg5.Text = "5. Qué órganos de los sentidos están involucrados directamente en la realidad virtual:"
+
+        RdbRta5_1.Text = "La vista y el oído"
+        RdbRta5_2.Text = "Vista y el gusto"
+        RdbRta5_3.Text = "Olfato y piel"
+
     End Sub
 
     Private Sub btnEvaTema3_Click(sender As Object, e As EventArgs) Handles btnEvaTema3.Click
@@ -650,37 +639,41 @@ Public Class Menu
         Timer1.Enabled = True
         PnlQuiz.Visible = True
 
-        lblPreg1.Text = "PREGUNTA"
+        lblPreg1.Text = "1.¿Cuáles son los dos tipos de condicionales en C++?"
 
-        RdbRta1_1.Text = "pregunta verdadera"
-        RdbRta1_2.Text = ""
-        RdbRta1_3.Text = ""
+        RdbRta1_1.Text = "If-else/ switch"
+        RdbRta1_2.Text = "For/go"
+        RdbRta1_3.Text = "While/ do while"
 
-        lblPreg2.Text = "PREGUNTA"
 
-        RdbRta2_1.Text = ""
-        RdbRta2_2.Text = "pregunta verdadera"
-        RdbRta2_3.Text = ""
+        lblPreg2.Text = "2.¿Que son los operadores relacionales?"
 
-        lblPreg3.Text = "PREGUNTA"
+        RdbRta2_1.Text = "Son operadores que sirven para dar funciones aritmeticas"
+        RdbRta2_2.Text = "Son operadores que nos permiten evaluar las relaciones entre un par de operandos"
+        RdbRta2_3.Text = "Son operadores que sirven para dar funciones qe nos permiten conectar un par de operandos"
 
-        RdbRta3_1.Text = "pregunta verdadera"
-        RdbRta3_2.Text = ""
-        RdbRta3_3.Text = ""
-        RdbRta3_4.Text = ""
+        lblPreg3.Text = "3.¿Que son las sentencias condicionales en C++?"
 
-        lblPreg4.Text = "PREGUNTA"
+        RdbRta3_1.Text = "Son estructuras de ocntrol que sirven para comparar dos valores"
+        RdbRta3_2.Text = "Es un ciclo el for,while o do while."
+        RdbRta3_3.Text = "Son token que sirven para abirir una funcion c++"
 
-        RdbRta4_1.Text = ""
-        RdbRta4_2.Text = "pregunta verdadera"
-        RdbRta4_3.Text = ""
-        RdbRta4_4.Text = ""
 
-        lblPreg5.Text = "PREGUNTA"
+        lblPreg4.Text = "4.Qué tipo de datos son válidos para la expresión en la sentencia Switch"
 
-        RdbRta5_1.Text = "pregunta verdadera"
-        RdbRta5_2.Text = ""
-        RdbRta5_3.Text = ""
+        RdbRta4_1.Text = "Caracteres."
+        RdbRta4_2.Text = "Enteros"
+        RdbRta4_3.Text = "Apuntadores "
+
+
+
+        lblPreg5.Text = "5.¿Cuantos IF pueden anidarse?
+"
+
+        RdbRta5_1.Text = "Los que sean necesarios"
+        RdbRta5_2.Text = "1"
+        RdbRta5_3.Text = "Ninguno "
+
 
     End Sub
 
