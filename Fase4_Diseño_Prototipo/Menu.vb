@@ -614,6 +614,7 @@ Public Class Menu
         RdbRta3_1.Text = "Es sumergirse por completo en un mundo virtual"
         RdbRta3_2.Text = "En la que te enfrentas con el mundo virtual"
         RdbRta3_3.Text = "Creas tu propia realidad"
+        RdbRta3_4.Text = "ninguna de las anteriores"
 
 
         lblPreg4.Text = "4.¿cuales son los tipos de gafas más conocidos en la relaidad virtual?"
@@ -621,7 +622,7 @@ Public Class Menu
         RdbRta4_1.Text = "Gear VR y Worddin"
         RdbRta4_2.Text = "Oculus Rift y Gear VR"
         RdbRta4_3.Text = "Wordding y Oculus"
-
+        RdbRta4_3.Text = "Oculus y Gear"
 
         lblPreg5.Text = "5. Qué órganos de los sentidos están involucrados directamente en la realidad virtual:"
 
@@ -657,6 +658,7 @@ Public Class Menu
         RdbRta3_1.Text = "Son estructuras de ocntrol que sirven para comparar dos valores"
         RdbRta3_2.Text = "Es un ciclo el for,while o do while."
         RdbRta3_3.Text = "Son token que sirven para abirir una funcion c++"
+        RdbRta3_4.Text = "Ninguna de las anteriores"
 
 
         lblPreg4.Text = "4.Qué tipo de datos son válidos para la expresión en la sentencia Switch"
@@ -664,6 +666,7 @@ Public Class Menu
         RdbRta4_1.Text = "Caracteres."
         RdbRta4_2.Text = "Enteros"
         RdbRta4_3.Text = "Apuntadores "
+        RdbRta4_4.Text = "Todas las anteriores "
 
 
 
