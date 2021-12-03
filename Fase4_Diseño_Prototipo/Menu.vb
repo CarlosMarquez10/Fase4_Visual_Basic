@@ -554,15 +554,52 @@ Public Class Menu
     End Sub
 
     Private Sub btnEvaTema2_Click(sender As Object, e As EventArgs) Handles btnEvaTema2.Click
+
+        LimpiarPreguntas()
+
         PnlAudio.Visible = False
         PnlPdf.Visible = False
         PnlVidos.Visible = False
         Timer1.Enabled = True
         PnlQuiz.Visible = True
 
+        lblPreg1.Text = "1. ¿Que es la seguridad informática?"
+
+        RdbRta1_1.Text = "Ciencia que estudia a la informática"
+        RdbRta1_2.Text = "Disciplina que protege la información en un sistema informático"
+        RdbRta1_3.Text = "Ambas son correctas"
+
+        lblPreg2.Text = "2 . ¿cúales son las 4 principales caracteristicas de la seguridad informática?"
+
+        RdbRta2_1.Text = "seguridad-integridad-autenticación-confidencialidad"
+        RdbRta2_2.Text = "prevencion-disponibilidad-confidencialidad-integridad"
+        RdbRta2_3.Text = "Ambas son correctas"
+
+        lblPreg3.Text = "3. ¿Es es recomendable tener la misma contraseña para todo?"
+
+        RdbRta3_1.Text = "No, porque si descubren una descubren todas"
+        RdbRta3_2.Text = "No, porque si no se te olvidan"
+        RdbRta3_3.Text = "No porque es bueno cambiarla"
+        RdbRta3_4.Text = "Si, porque la que tengo me gusta"
+
+        lblPreg4.Text = "4. ¿Como sabes si una pagina es segura?"
+
+        RdbRta4_1.Text = "Normalmente todas son seguras"
+        RdbRta4_2.Text = "Todas son seguras siempre"
+        RdbRta4_3.Text = "Depende el candado"
+        RdbRta4_4.Text = "No me importa que no sean seguras"
+
+        lblPreg5.Text = "5 . ¿Es importante saber lo que descargas?"
+
+        RdbRta5_1.Text = "No, todo o de la app store o play store es legal"
+        RdbRta5_2.Text = "Hay que fijarse en que descargas"
+        RdbRta5_3.Text = "No es importante"
+
     End Sub
 
     Private Sub btnEvaTema1_Click(sender As Object, e As EventArgs) Handles btnEvaTema1.Click
+
+        LimpiarPreguntas()
         PnlAudio.Visible = False
         PnlPdf.Visible = False
         PnlVidos.Visible = False
@@ -603,11 +640,49 @@ Public Class Menu
     End Sub
 
     Private Sub btnEvaTema3_Click(sender As Object, e As EventArgs) Handles btnEvaTema3.Click
+        LimpiarPreguntas()
         PnlAudio.Visible = False
         PnlPdf.Visible = False
         PnlVidos.Visible = False
         Timer1.Enabled = True
         PnlQuiz.Visible = True
+
+        lblPreg1.Text = "PREGUNTA"
+
+        RdbRta1_1.Text = "pregunta verdadera"
+        RdbRta1_2.Text = ""
+        RdbRta1_3.Text = ""
+
+        lblPreg2.Text = "PREGUNTA"
+
+        RdbRta2_1.Text = ""
+        RdbRta2_2.Text = "pregunta verdadera"
+        RdbRta2_3.Text = ""
+
+        lblPreg3.Text = "PREGUNTA"
+
+        RdbRta3_1.Text = "pregunta verdadera"
+        RdbRta3_2.Text = ""
+        RdbRta3_3.Text = ""
+        RdbRta3_4.Text = ""
+
+        lblPreg4.Text = "PREGUNTA"
+
+        RdbRta4_1.Text = ""
+        RdbRta4_2.Text = "pregunta verdadera"
+        RdbRta4_3.Text = ""
+        RdbRta4_4.Text = ""
+
+        lblPreg5.Text = "PREGUNTA"
+
+        RdbRta5_1.Text = "pregunta verdadera"
+        RdbRta5_2.Text = ""
+        RdbRta5_3.Text = ""
+
+    End Sub
+
+
+    Sub LimpiarPreguntas()
 
         lblPreg1.Text = ""
 
